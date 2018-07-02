@@ -4,7 +4,7 @@ My implementation of remote control communication protocol (RC5-extended) on the
 ## How it works?
 My implementation of RC5 is based on the EXTI (external interrupt) and the timer. EXTI will be executing on falling edge:
 * when start bit is received (10),
-* when next falling edge is dectected.
+* when next falling edge is detected.
 
 This two points is used to measuring duration of a single bit. We consider three cases:
 * when a start bit is 1 (10) and a field bit is 1 (10):
